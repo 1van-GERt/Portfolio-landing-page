@@ -1,0 +1,45 @@
+.contacts{
+	@include container_inside();
+	text-align: center;
+	width: 26.2rem;
+	margin: 11.4rem auto 12.3rem;
+	h2{
+		padding-bottom: 2rem;
+	}
+	button{
+		height: 4.2rem;
+		width: 18rem;
+		margin: 2rem 0 8.6rem;
+		border-radius: 5rem;
+		border: none;
+		background-color: $black;
+		color: $white;
+		transition: all .3s ease-in-out;
+		&:hover{
+			background-color: $bc-white1;
+			color: black;
+			border: .1rem black solid;
+		}
+		@include breakpoint($mobile-bp){
+			width: 31.6rem;
+		}
+	}
+}
+
+
+.social {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 4.6rem;
+	li{
+		/*box-shadow:  10px 7px 20px 11px $bc-white2;
+			background-color: $bc-white2;*/
+		transition: all .3s ease-in-out;
+		&:hover{
+			transform: rotate(10deg) scale(1.1);;
+			box-shadow:  0 0 10px 7px $bc-white2;
+			background-color: $bc-white2;
+		}
+	}
+}
+.social__item {}

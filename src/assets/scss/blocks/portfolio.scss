@@ -1,0 +1,55 @@
+.portfolio{
+	@include container_inside();
+	text-align: center;
+	padding: 12.3rem 0 9.6rem 0;
+	
+	h2{
+		margin-bottom: 4.7rem;
+	}
+
+	@include breakpoint($mobile-bp){
+		margin: 0 2.9rem;
+	}
+}
+
+.portfolio__item{
+	box-sizing: border-box;
+	margin-bottom: 9.9rem;
+	display: block;
+	p{
+		margin-bottom: 4.5rem;
+		
+		color: $text-main;
+		text-decoration: underline;
+		
+	}
+	/*transition: all 5s ease-in-out;*/
+	&:hover{
+		>div{
+			box-shadow:  10px 7px 20px 11px rgba(0,0,0,0.5);
+			>img{
+				transform: scale(1.2) translate(5%, 5%);
+			}
+		}
+	}
+
+
+	&>div{
+		overflow: hidden;;
+		margin-bottom: 4.4rem;
+		transition: all .5s ease-in-out;
+	}
+	@include breakpoint($mobile-bp){
+		margin-bottom: 7.8rem;
+	}
+}
+
+.portfolio__img{	
+	transition: all 1s ease-in-out;
+	width: 100%;
+	
+	@include breakpoint($mobile-bp){
+		margin-bottom: 3.5rem;
+	}
+}
+

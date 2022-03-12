@@ -1,0 +1,48 @@
+.skills{
+	@include container_inside();
+	text-align: center;
+	padding-top: 9rem;
+
+	h2{
+		padding-bottom: 7rem;
+	}
+}
+.skills__list {
+	display: flex;
+	justify-content: space-between;
+	margin: 8.3rem 0 11rem;
+	@include breakpoint($mobile-bp){
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 1.8rem;
+
+	}
+}
+.skills__item {
+	display: flex;	
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	@include breakpoint($mobile-bp){
+		margin-bottom: 8.1rem;
+	}
+}
+.skills__img {
+	margin-bottom: 2.4rem;
+}
+.skills__rating {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 4.1rem;
+}
+.skills__rating__item {
+	background: url('../images/skills-rating-item.svg')no-repeat;
+	width: 2.6rem;
+	height: 2.6rem;
+
+	&--bg{
+		
+		width: 2.6rem;
+		background: url('../images/skills-rating-item-active.svg')no-repeat;
+	}
+}

@@ -1,0 +1,50 @@
+
+
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "vendor/reset.scss";
+
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+
+body {
+	
+	&.no-scroll{
+		overflow: hidden;
+	}
+    background-color: $bc-white1;
+    font-size: 21px;
+    color: $text-main;
+    font-family: Gilroy-Bold;
+    a{
+    	text-decoration: none;
+    	cursor: pointer;
+    }
+    p{
+    	font-size: 1.8rem;
+    	line-height: 2.2rem;
+    	font-family: Gilroy-medium;
+    }
+
+    h1{
+    	font-size: 4.73rem;
+    	line-height: 5.85rem;
+    }
+    h2{
+    	font-size: 3.4rem;
+    	line-height: 4.2rem;
+    }
+}
+
+
+@import "blocks/header";
+@import "blocks/home";
+@import "blocks/skills";
+@import "blocks/aboutMe";
+@import "blocks/portfolio";
+@import "blocks/footer";
